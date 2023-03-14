@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(250, 223, 233);
+
+}
+
+h1 {
+    font-family: 'DynaPuff', cursive;
+    color: rgb(136, 14, 136);
+    text-align: center;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto auto;
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid  rgb(240, 48, 138) ;
+}
+
+button.add {
+    width: 20%;
+    cursor: pointer;
+    background: rgb(240, 48, 138);
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    /* border: 1px solid black; */
+    padding-top: 50px;
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    
+}
+
+.item.clicado {
+    background: rgb(183, 245, 158);
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone {
+    flex: 20%;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.item-nome {
+    flex: 60%;
+    font-size: 20px;
+    font-weight: bolder;
+    
+
+}
+
+.item-botao {
+    flex: 20%;
+
+
+}
+
+.delete {
+    background: rgb(252, 114, 2);
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    font-size: 18px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.mdi-check-circle {
+    color: green;
+}
